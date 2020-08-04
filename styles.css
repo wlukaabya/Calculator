@@ -1,0 +1,76 @@
+#calContainer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 500px;
+    border: solid grey;
+    background-color: rgb(79, 66, 128);
+    border-radius: 10px;
+    top: 10px;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;  
+}
+
+body::after{
+    background-image: url('6788133.png')
+    
+}
+
+#buttons{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(5,40px);
+    grid-template-rows: repeat(4,50px);
+    column-gap: 5px;
+    row-gap: 5px;
+    
+}
+.btnItem{
+    font-size: 20px;
+    color: honeydew;
+    border-radius: 8px;
+    background-color: rgb(25, 26, 24);
+    cursor: pointer;
+}
+
+#erase{
+    font-size: 20px;
+    background-color: rgba(60, 50, 50, 0.96);
+    border-radius: 8px;
+    color: honeydew;
+    cursor: pointer;
+}
+
+#results {
+	grid-column: 1 / 6;
+	background-color: rgba(236, 240, 241,1.0);
+	border-radius: 4px;
+	display: flex;
+    align-items: center;
+}
+
+#results > h1{
+    height: 40px;
+	flex-grow: 1;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin: auto;
+	font-size: 40px;
+	display: flex;
+	justify-content: flex-end;
+
+}
+#zero{
+    grid-column: 1/4;
+}
+#operator {
+    background-color: peru;
+}
+h2{
+    align-content: center;
+    margin-left: 510px;
+    color: indigo;
+}
